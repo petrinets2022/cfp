@@ -1,0 +1,110 @@
+
+Elvio Amparore, Italy
+amparore@di.unito.it 
+
+Abel Armas Cervantes, Australia
+abel.armas@unimelb.edu.au
+
+Paolo Baldan, Italy
+baldan@math.unipd.it
+
+Benoit Barbot, France 
+benoit.barbot@u-pec.fr
+
+Béatrice Bérard, France
+Beatrice.Berard@lip6.fr
+
+Didier Buchs, Switzerland
+didier.buchs@unige.ch 
+
+Josep Carmona, Spain
+jcarmona@cs.upc.edu
+
+Thomas Chatain, France
+chatain@lsv.fr
+
+Raymond Devillers, Belgium
+Raymond.Devillers@ulb.ac.be
+
+Jörg Desel, Germany
+joerg.desel@fernuni-hagen.de
+
+Susanna Donatelli, Italy
+susi@di.unito.it
+
+Boudewijn van Dongen, The Netherlands
+b.f.v.dongen@tue.nl
+
+Loïc Helouet, France
+loic.helouet@inria.fr   
+
+Javier Esparza, Germany
+esparza@in.tum.de 
+
+David de Frutos Escrig, Spain
+defrutos@sip.ucm.es  
+
+Stefan Haar, France
+stefan.haar@inria.fr
+
+Xudong He, USA 
+hex@cis.fiu.edu
+
+Marieke Huisman, The Netherlands
+m.huisman@utwente.nl
+
+Ryszard Janicki, Canada
+janicki@cas.mcmaster.ca
+
+Anna Kalenkova, Australia
+anna.kalenkova@unimelb.edu.au
+
+Jörg Keller, Germany
+joerg.keller@fernuni-hagen.de
+
+Michael Köhler-Bußmeier, Germany
+michael.koehler-bussmeier@haw-hamburg.de 
+
+Irina Lomazova
+ilomazova@hse.ru
+
+Robert Lorenz, Germany 
+robert.lorenz@informatik.uni-augsburg.de
+
+Roland Meyer, Germany 
+roland.meyer@tu-braunschweig.de 
+ 
+Lukasz Mikulski, Poland
+mikulskilukasz@gmail.co
+
+Andrew Miner, USA
+asminer@cs.iastate.edu 
+
+Andrey Mokhov, UK
+andrey.mokhov@newcastle.ac.uk
+
+Marco Montali, Italy
+montali@inf.unibz.it
+
+Jaco van de Pol, Denmark
+jaco@cs.au.dk 
+
+Dumitru Potop, France
+dumitru.potop@inria.fr
+
+Pierre-Alain Reynier, France
+pierre-alain.reynier@lis-lab.fr 
+
+Arnaud Sangnier, France
+sangnier@irif.fr 
+
+Natalia Sidorova, The Netherlands
+n.sidorova@tue.nl
+
+Alex Yakovlev, UK
+alex.yakovlev@ncl.ac.uk
+
+Wlodek Zuberek, Canada 
+wlodek@mun.ca
+
+ 
