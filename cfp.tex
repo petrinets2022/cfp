@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt]{article}
 \usepackage{multicol}
 \usepackage{a4wide}
 \usepackage{xspace}
@@ -18,19 +18,34 @@
 \usetikzlibrary{calc}
 \definecolor{couleurLoVe}{cmyk}{0, .19, .94, .0118}
 
-\addtolength{\textwidth}{5.3cm}
-\addtolength{\oddsidemargin}{-2.8cm}
-\addtolength{\topmargin}{-3.5cm}
-\addtolength{\textheight}{6cm}
+%\addtolength{\textwidth}{5cm}
+%\addtolength{\oddsidemargin}{-1.8cm}
+%addtolength{\topmargin}{-3.5cm}
+%\addtolength{\textheight}{5cm}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ right = 10mm,
+ top=10mm,
+ bottom = 10mm,
+ footskip=0mm
+ }
 
 \hypersetup{urlcolor=blue}
 \setlist{noitemsep}
 \newcommand{\styleUniv}[1]{\textcolor{black!75}{#1}}
 
+\pagestyle{empty}
 \begin{document}
-\mbox{}
 
-\vspace{-1cm}\hspace{-1.5cm}\includegraphics[width=1.1\textwidth,height=7cm]{images/bergen.jpg}
+\begin{center}
+%\hspace*{-2.2em}
+\includegraphics[width=\textwidth,height=7cm]{images/bergen.jpg}
+\end{center}
+
 \begin{multicols}{2}
 \begin{center}
 {\large\bf
@@ -52,7 +67,7 @@ with a special track on Application of Concurrency to System Design (ACSD)
 
 \smallskip
 
-\url{www.hvl.no/petrinets2022}
+\href{https://www.hvl.no/petrinets2022}{www.hvl.no/petrinets2022} 
 
 \smallskip
 
@@ -64,7 +79,7 @@ with a special track on Application of Concurrency to System Design (ACSD)
 \begin{center}
 \includegraphics[height=2.5cm]{logos/LogoPN.pdf}
 
-{\bf Important dates}
+%{\bf Important dates}
 
 \begin{tabular}{|l|r@{, 2022 }l|}
 \hline
@@ -74,9 +89,11 @@ Submission of papers & January 20 & (*) \\
 \hline
 Notification & March 5 & \\
 \hline
-Final version due & March 19 & (*) \\
+Final version due & March 18 & (*) \\
 \hline
-Participation in Tool Exhibition & May 31 & \\
+Registration for Tool Presentations & May 31 & \\
+\hline
+Petri nets course and PhD school & June 19--20 & \\
 \hline
 Workshops and Tutorials & June 20--21 & \\
 \hline
@@ -110,8 +127,7 @@ Paper} award. Authors of {\bf selected papers} presented at the conference will 
 to submit an extended version that will be further reviewed for inclusion into a special
 issue of {\bf Fundamenta Informaticae}.
 
-\begin{multicols}{2}
-\paragraph*{General topics related to concurrency}\mbox{}
+\paragraph*{General topics of interest related to concurrency}
 
 \vspace*{-0.3cm}
 \begin{itemize}
@@ -123,10 +139,7 @@ issue of {\bf Fundamenta Informaticae}.
 \item Modelling of hardware and biological systems
 \end{itemize}
 
-\vspace*{-0.5cm}
-\paragraph*{Special track on ACSD (Application of Concurrency to System Design)}
-Both theoretical and applied research about formal approaches (in a broad sense) to designing computer systems that exhibit concurrent behaviour.
-The formal models of computation and concurrency for the above systems and problems are not limited by Petri nets, but also include models like dataflow models, communicating automata, process algebras, graph rewriting systems, state charts, MSCs, modal and temporal logics.
+
 
 % \smallskip
 % \bigskip
@@ -135,9 +148,10 @@ The formal models of computation and concurrency for the above systems and probl
 %\begin{center}
 %\includegraphics[scale=0.19]{images/MSH.jpg}
 %\end{center}
-\columnbreak
 
-\paragraph*{Topics specific to Petri Nets}\mbox{}
+
+\begin{multicols}{2}
+\paragraph*{Topics specific to Petri Nets}
 
 % \vspace*{-0.3cm}
 \begin{itemize}
@@ -145,12 +159,17 @@ The formal models of computation and concurrency for the above systems and probl
 \item System design and model-driven development using nets
 \item Relationships between Petri nets and other approaches
 \item Net-based semantical, logical and algebraic calculi
-\item Higher-level net models (coloured nets, timed nets, etc.)
+\item Higher-level net models (e.g, coloured nets, timed nets)
 \item Stochastic net models
 \item Verification and model checking using nets
 \item Process discovery and conformance checking
 \item Computer tools for nets
 \item Standardisation of nets
+\end{itemize}
+
+\columnbreak
+
+\begin{itemize}
 \item Experience reports describing applications of nets to different kinds of systems
 and application fields, e.g.:
 
@@ -159,11 +178,11 @@ and application fields, e.g.:
 	real-time systems & workflows \\
 	embedded systems & process mining \\
 	biological systems & supervisory control \\
-	health and medical systems & protocols and networks \\
-	environmental systems & Internet and Web services \\
-	hardware & e-commerce and trading \\
-	telecommunications & programming languages \\
-	railway networks & performance evaluation \\
+	health and medical systems & railway networks  \\
+	Internet and Web services & environmental systems \\
+	e-commerce and trading & hardware \\
+	programming languages & telecommunications  \\
+	protocols and networks & performance evaluation \\
 	component based development & operations research \\
 	\end{tabular}
 \end{itemize}
@@ -214,9 +233,14 @@ and application fields, e.g.:
 \newpage
 %\mbox{}
 
+\vspace*{-0.5cm}
+\paragraph*{Special track on ACSD (Application of Concurrency to System Design)}
+Both theoretical and applied research about formal approaches (in a broad sense) to designing computer systems that exhibit concurrent behaviour.
+The formal models of computation and concurrency for the above systems and problems are not limited by Petri nets, but also include models like dataflow models, communicating automata, process algebras, graph rewriting systems, state charts, MSCs, modal and temporal logics.
+
 %\vspace*{-2em}
 \subsection*{Paper Submission}
-
+\vspace*{-0.5em}
 Two kinds of papers can be submitted
 %\vspace*{-0.2cm}
 \begin{itemize}
@@ -244,7 +268,7 @@ of this Call for Papers using EasyChair:
 
 %\vspace*{-0.5em}
 \subsection*{Tool Exhibition}
-
+\vspace*{-0.5em}
 An exhibition of Petri net tools will take place on Wednesday. It consists of informal
 demonstrations for small groups/individuals and there are no scheduled talks. Requests
 for participation in the tool exhibition must be sent to the Tool Exhibition chairs
@@ -255,7 +279,7 @@ to the Internet.
 
 %\vspace*{-0.5em}
 \subsection*{Courses, Workshops and Tutorials}
-
+\vspace*{-0.5em}
 The main conference takes place from Wednesday~22 to Friday~24.
 The three days before the main conference also offer a wide range of activities.
 The {\bf Petri Net Course}
@@ -277,33 +301,32 @@ taken separately, without any credit.
 % \item \textbf{Workshops} also take place on Monday and Tuesday.
 % \end{itemize}
 Detailed descriptions of Workshops and Tutorials will be made available via the conference
-Web pages.
-
-It is also possible to arrange {\bf Meetings} and {\bf Courses} related to Petri Nets.
+Web pages. It is also possible to arrange {\bf Meetings} and {\bf Courses} related to Petri Nets.
 Submissions for such activities must contain a 2--5 page description. They must be
-received by the Workshops and Tutorials chairs via email no later than January 10,
+received by the Workshops chairs via email no later than January 13,
 2022.
 
 \subsection*{Organisation}
+\vspace*{-1.5em}
 
-%\vspace*{-1em}
-\setlength{\columnsep}{-5cm}
+\setlength{\columnsep}{0cm}
 \begin{multicols}{2}
-\paragraph*{Programme committee co-chairs}\mbox{}
-%\vspace*{-1em}
+\paragraph{Programme committee co-chairs}$ $
+\vspace*{0.25em}
 
 \noindent Laure Petrucci \\
 \indent \styleUniv{University Paris 13, France} \\
 \noindent Luca Bernardinello \\
 \indent \styleUniv{University de Milano Bicocca, Italy} \\
 \noindent Jörg Desel (ACSD track) \\
-\indent \styleUniv{FernUniversität in Hagen, Germany} \\
+\indent \styleUniv{Fern Universität in Hagen, Germany} \\
 \noindent Alex Yakovlev (ACSD track) \\
 \indent \styleUniv{University of Newcastle-upon-Tyne, UK}
 %\href{mailto:pn2021-PC@petrinet.net}{pn2021-PC@petrinet.net}
 
 %\vspace*{-4.0em}
-\paragraph*{Workshops co-chairs}\mbox{}
+\paragraph*{Workshops co-chairs} $ $
+\vspace*{0.25em}
 
 \noindent Gianfranco Ciardo \\
 \indent \styleUniv{Iowa State University, USA} \\
@@ -313,9 +336,32 @@ received by the Workshops and Tutorials chairs via email no later than January 1
 %\indent \styleUniv{LSV, CNRS, ENS Paris-Saclay, France} \\
 %\href{mailto:pn2021-WT@petrinet.net}{pn2021-workshops@petrinet.net}
 
-\vspace*{-8.5em}
-\paragraph*{General chairs}\mbox{}
+%\vspace*{-8.5em}
 
+
+\columnbreak
+
+\paragraph{Steering committee}\mbox{}
+\vspace*{0.25em}
+
+%\vspace*{-1em}
+%\setlength{\columnsep}{0.2cm}
+\hspace*{-2em}\begin{tabular}{ll}
+W. van der Aalst, Germany   & L. M. Kristensen, Norway \\
+G. Ciardo, USA              & C. Lin, China \\
+J. Desel, Germany           & W. Penczek, Poland \\
+S. Donatelli, Italy         & L. Pomello, Italy \\
+S. Haddad, France           & W. Reisig, Germany \\
+K. Hiraishi, Japan          & G. Rozenberg, The Netherlands \\
+J. Kleijn, The Netherlands  & M. Silva, Spain \\
+F. Kordon, France           & A. Valmari, Finland \\
+M. Koutny, UK (chair)       & A. Yakovlev, UK \\
+
+\end{tabular}
+\end{multicols}
+\paragraph*{General organising chairs}$ $
+
+\vspace*{0.25em}
 \noindent Lars Michael Kristensen \\
 \indent \styleUniv{Western Norway University of Applied Sciences}\\
 \noindent Violet Ka I Pun \\
@@ -333,36 +379,7 @@ received by the Workshops and Tutorials chairs via email no later than January 1
 
 %\mbox{}
 
-\columnbreak
-
-\paragraph*{Steering committee}\mbox{}
-
-%\vspace*{-1em}
-\setlength{\columnsep}{0.2cm}
-\begin{multicols}{2}
-\noindent W. van der Aalst, Germany\\
-G. Ciardo, USA\\
-J. Desel, Germany\\
-S. Donatelli, Italy\\
-S. Haddad, France\\
-K. Hiraishi, Japan\\
-J. Kleijn, The Netherlands\\
-F. Kordon, France\\
-M. Koutny, UK (chair)\\
-
-\columnbreak
-
-\noindent L. M. Kristensen, Norway\\
-C. Lin, China\\
-W. Penczek, Poland\\
-L. Pomello, Italy\\
-W. Reisig, Germany\\
-G. Rozenberg, The Netherlands\\
-M. Silva, Spain\\
-A. Valmari, Finland\\
-A. Yakovlev, UK\\
-\end{multicols}
-
+\newpage
 \paragraph*{Programme committee}\mbox{}
 %\vspace*{-1em}
 \begin{multicols}{2}
@@ -371,7 +388,7 @@ Elvio Amparore, Italy \\
 Abel Armas Cervantes, Australia \\
 Paolo Baldan, Italy \\
 Benoit Barbot, France  \\
-BÈatrice BÈrard, France \\
+B\'{e}atrice B\'{e}rard, France \\
 Didier Buchs, Switzerland \\
 Josep Carmona, Spain \\
 Raymond Devillers, Belgium \\
@@ -405,7 +422,7 @@ Wlodek Zuberek, Canada
 % ADDED BY ÉTIENNE TO MAKE SURE WHICH VERSION WE TALK ABOUT
 {\tiny \textcolor{black!2}{Version: \today{}}}
 \end{multicols}
-\end{multicols}
+
 
 
 \end{document}
