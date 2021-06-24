@@ -13,6 +13,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
+\usepackage{subcaption}
 \usepackage{tikz}
 
 \usetikzlibrary{calc}
@@ -66,9 +67,20 @@ with a special track on Application of Concurrency to System Design (ACSD)}
 {\large\bf
 19--24 June 2022, Bergen, Norway}
 
-\includegraphics[height=2.5cm]{logos/LogoPN.pdf}
+\smallskip
 
-\href{https://conf-2022.petrinet.net}{conf-2022.petrinet.net}
+
+\begin{tabular}{cc}
+
+\includegraphics[height=1.9cm]{logos/hvl-logo.png} &
+
+\includegraphics[height=1.9cm]{logos/LogoPN.pdf}
+
+
+
+\end{tabular}
+
+\href{https://hvl.no/petrinets2022}{hvl.no/petrinets2022} | \href{http://conf-2022.petrinet.net}{conf-2022.petrinet.net}
 
 %\smallskip
 
@@ -107,7 +119,7 @@ Main Conference & June 22--24 & \\
 
 \end{multicols}
 
-\bigskip
+%\bigskip
 \noindent
 The {\bf\nth{43} annual international Petri Nets conference} will be organised by the {\bf \href{https://www.hvl.no/en/research/group/software-engineering/}{Software Engineering Research Group}} at {\bf Western Norway University of Applied Sciences} and will be held at Campus Bergen.
 
@@ -129,34 +141,12 @@ Paper} award. Authors of {\bf selected papers} presented at the conference will 
 to submit an extended version that will be further reviewed for inclusion into a special
 issue of {\bf Fundamenta Informaticae}.
 
-\paragraph*{General topics of interest related to concurrency}
-
-\vspace*{-0.3cm}
-\begin{itemize}
-\item Model checking and verification of distributed systems
-\item Verification of infinite-state or parametric systems
-\item Causality/partial order theory of concurrency
-\item Educational issues related to concurrency
-\item New developments in the theory of concurrency
-\item Modelling of hardware and biological systems
-\end{itemize}
-
-
-
-% \smallskip
-% \bigskip
-% \bigskip
-
-%\begin{center}
-%\includegraphics[scale=0.19]{images/MSH.jpg}
-%\end{center}
-
-
 \begin{multicols}{2}
+
 \paragraph*{Topics specific to Petri Nets}
 
 % \vspace*{-0.3cm}
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 \item Analysis and synthesis, structure and behaviour of nets
 \item System design and model-driven development using nets
 \item Relationships between Petri nets and other approaches
@@ -167,11 +157,7 @@ issue of {\bf Fundamenta Informaticae}.
 \item Process discovery and conformance checking
 \item Computer tools for nets
 \item Standardisation of nets
-\end{itemize}
 
-\columnbreak
-
-\begin{itemize}
 \item Experience reports describing applications of nets to different kinds of systems
 and application fields, e.g.:
 
@@ -188,6 +174,27 @@ and application fields, e.g.:
 	component based development & operations research \\
 	\end{tabular}
 \end{itemize}
+
+\columnbreak
+%\vspace*{2em}
+\paragraph*{General topics of interest related to concurrency}
+
+%\vspace*{-0.3cm}
+\begin{itemize}[leftmargin=*]
+\item Model checking and verification of distributed systems
+\item Verification of infinite-state or parametric systems
+\item Causality/partial order theory of concurrency
+\item Educational issues related to concurrency
+\item New developments in the theory of concurrency
+\item Modelling of hardware and biological systems
+\end{itemize}
+
+\vspace*{-0.5cm}
+\paragraph*{Special track on ACSD (Application of Concurrency to System Design)}
+Both theoretical and applied research about formal approaches (in a broad sense) to designing computer systems that exhibit concurrent behaviour.
+The formal models of computation and concurrency for the above systems and problems are not limited by Petri nets, but also include models like dataflow models, communicating automata, process algebras, graph rewriting systems, state charts, MSCs, modal and temporal logics.
+
+
 \end{multicols}
 
 %
@@ -234,11 +241,6 @@ and application fields, e.g.:
 %\%end{tikzpicture}
 \newpage
 %\mbox{}
-
-\vspace*{-0.5cm}
-\paragraph*{Special track on ACSD (Application of Concurrency to System Design)}
-Both theoretical and applied research about formal approaches (in a broad sense) to designing computer systems that exhibit concurrent behaviour.
-The formal models of computation and concurrency for the above systems and problems are not limited by Petri nets, but also include models like dataflow models, communicating automata, process algebras, graph rewriting systems, state charts, MSCs, modal and temporal logics.
 
 %\vspace*{-2em}
 \subsection*{Paper Submission}
